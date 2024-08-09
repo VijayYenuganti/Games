@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Fira Code", "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  word-spacing: 10px;
+}
+
+header img {
+  width: 60px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+
+
+/* Choices Buttons */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin-bottom: 50px;
+}
+
+section button {
+  font-size: 5rem;
+  border-radius: 100%;
+  min-width: 120px;
+  margin: 0 20px;
+  border: 1px solid #fff;
+  background-color: hsl(200, 100%, 50%);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  transition: drop-shadow 0.5s ease;
+}
+
+section button:hover {
+  background-color: hsl(200, 100%, 70%);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+}
+
+
+
+/* Result Section */
+.resultHeading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  word-spacing: 15px;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 7rem;
+}
+
+#playerDisplay, #computerDisplay {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#resultDisplay {
+  margin-top: 5.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  word-spacing: 10px;
+}
+
+
+/* Win or Lose Text Colors */
+.victoryText {
+  color: #7FFF94;
+}
+
+.lostText {
+  color: #FF0000;
+}
