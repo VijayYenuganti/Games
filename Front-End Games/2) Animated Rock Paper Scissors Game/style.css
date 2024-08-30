@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Download This Fonts. */
+  font-family: "Rubik", "Poppins", "Fira Code", "Roboto", Arial, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at center, #ff7e5f, #feb47b);
+  background-size: 200% 200%;
+  animation: bgMove 3s infinite alternate;
+}
+
+@keyframes bgMove {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+  padding: 2.5rem;
+  font-weight: 600;
+}
+
+.heading {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 5rem 0 2rem;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  margin: 5rem 0 10rem;
+}
+
+.computer img,
+.player img {
+  width: 80%;
+}
+
+.shakeComputer {
+  animation: shakeComputer 0.8s linear;
+}
+
+.shakePlayer {
+  animation: shakePlayer 0.8s linear;
+}
+
+.points {
+  text-align: center;
+  margin: 2rem 0 5rem;
+  font-size: 1.3rem;
+}
+
+.tiePoints {
+  text-align: center;
+  margin: 2rem 0 5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+}
+.tiePoint {
+  margin-left: -0.5rem;
+}
+.computerPoints {
+  margin-left: 4rem;
+}
+
+.playerPoints {
+  margin-right: 4rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.options button {
+  padding: 1rem 2rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 150px;
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  font-weight: 600;
+  white-space: nowrap;
+  outline: none;
+  background-color: #feb47b8f;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform 0.25s ease-in;
+}
+
+.options button:hover {
+  transform: scale(1.1);
+}
+
+.options button:active {
+  box-shadow: none;
+}
+
+/* Shake animation when button is clicked */
+@keyframes shakeComputer {
+  0% {
+    transform: rotate(-30deg);
+  }
+
+  25% {
+    transform: rotate(30deg);
+  }
+
+  50% {
+    transform: rotate(-30deg);
+  }
+
+  75% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shakePlayer {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  25% {
+    transform: rotate(-30deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  75% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
