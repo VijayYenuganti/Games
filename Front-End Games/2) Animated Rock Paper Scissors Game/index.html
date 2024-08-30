@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Rock Paper Scissors</title>
+
+    <!---------- CSS file Linking ----------->
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <img src="Images/rock-paper-scissors.png" alt="Logo" width="65px" />
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <!-- Main Game Place -->
+    <div class="contianer">
+      <div class="heading">Choose and Option</div>
+      <!-- Images Section -->
+      <div class="images">
+        <div class="computer">
+          <img src="images/computer_images/rockComputer.png" />
+        </div>
+        <div class="player">
+          <img src="images/player_images/rockPlayer.png" />
+        </div>
+      </div>
+      <!-- Points Display -->
+      <div class="points">
+        COMPUTER <span class="computerPoints">0</span> /
+        <span class="playerPoints">0</span> PLAYER
+      </div>
+      <!-- Tie Points -->
+      <div class="tiePoints">
+        TIE: <span class="tiePoint">0</span>
+      </div>
+      <!-- Buttons -->
+      <div class="options">
+        <button type="button">Rock</button>
+        <button type="button">Paper</button>
+        <button type="button">Scissors</button>
+      </div>
+    </div>
+
+    <!---- Java Script Linking ---->
+    <script src="Script.js"></script>
+  </body>
+</html>
